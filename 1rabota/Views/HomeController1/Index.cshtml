@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Статья – Часть 1";
+}
+
+<div class="article-container">
+    <h1>Интересная статья – Часть 1</h1>
+    <h2>Эволюция интернет-магазинов: от простых витрин до умных алгоритмов</h2>
+    <img src="/images/picture.jpg" width="300" />
+    <h3>Содержимое</h3>
+    <ul>
+        <li>Как начинались интернет-магазины</li>
+        <li>Первые попытки продажи онлайн</li>
+        <li>Развитие технологий</li>
+    </ul>
+    <p>
+
+        Интернет-магазины стали неотъемлемой частью нашей жизни. Сегодня мы можем купить практически все, не выходя из дома. Но так было не всегда.
+        В начале 90-х годов первые интернет-магазины представляли собой простые веб-страницы с текстовым описанием товаров. Оплата происходила через банковские переводы, а доставка занимала недели. Один из первых успешных проектов – Amazon, начавший свой путь с продажи книг.
+        Со временем технологии развивались, появились интерактивные каталоги, а затем и системы онлайн-оплаты. Это дало толчок массовому развитию электронной коммерции.
+        👉 Что изменилось с приходом мобильных устройств и умных алгоритмов? Узнайте во второй части!
+
+    </p>
+
+
+    <a href="@Url.Action("Page2", "HomeController1")" class="next-button" onclick="myFunction()" >Далее →</a>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+    .article-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .next-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<script>
+    function myFunction() {
+        alert("вы переходите на 2 страницу!");
+    }
+</script>
