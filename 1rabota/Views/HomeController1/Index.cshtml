@@ -1,6 +1,4 @@
-﻿
-
-@{
+﻿@{
     ViewBag.Title = "Статья – Часть 1";
 }
 
@@ -18,13 +16,44 @@
 
         Интернет-магазины стали неотъемлемой частью нашей жизни. Сегодня мы можем купить практически все, не выходя из дома. Но так было не всегда.
         В начале 90-х годов первые интернет-магазины представляли собой простые веб-страницы с текстовым описанием товаров. Оплата происходила через банковские переводы, а доставка занимала недели. Один из первых успешных проектов – Amazon, начавший свой путь с продажи книг.
-        Со временем технологии развивались, появились интерактивные каталоги, а затем и системы онлайн-оплаты. 
-        Это дало толчок массовому развитию электронной коммерции.
+        Со временем технологии развивались, появились интерактивные каталоги, а затем и системы онлайн-оплаты. Это дало толчок массовому развитию электронной коммерции.
         👉 Что изменилось с приходом мобильных устройств и умных алгоритмов? Узнайте во второй части!
 
     </p>
 
 
-    <a href="@Url.Action("Welcome", "HomeController1")" class="next-button">Далее →</a>
+    <a href="@Url.Action("ArticlePage2", "Home")" class="next-button">Далее →</a>
 </div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+    .article-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .next-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+</style>
 
